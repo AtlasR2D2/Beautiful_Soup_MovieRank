@@ -49,5 +49,5 @@ print(f"Exporting list of {len(movie_items_list)} movies to {movies_filename}")
 with open(movies_filename, "w", encoding="utf8") as movie_file:
     movies_string = ""
     for movie_title in movie_items_list:
-        movies_string += f"{movie_title}\n"
-    movie_file.write(movies_string)
+        movie_string = f"{movie_title}\n"
+        movie_file.write(movie_string)
